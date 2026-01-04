@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="menu-page" >
+
+<div class="header">
+  <h2 class="title">🍽 Restaurant Menu</h2>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+  <button class="order-btn" onclick="window.location.href='/orders'">View Orders</button>
+</div>
+
+<div class="menu-container">
+
+  <div class="food-card">
+    <img src="/static/bimage.png" alt="Burger">
+    <h3>Burger</h3>
+    <p class="price">₹150</p>
+    <div class="qty">
+      <button onclick="decrease('b')">-</button>
+      <span id="b">0</span>
+      <button onclick="increase('b')">+</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="/static/pimage.png" alt="Pizza">
+    <h3>Pizza</h3>
+    <p class="price">₹200</p>
+    <div class="qty">
+      <button onclick="decrease('p')">-</button>
+      <span id="p">0</span>
+      <button onclick="increase('p')">+</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="/static/jimage.png" alt="Juice">
+    <h3>Juice</h3>
+    <p class="price">₹80</p>
+    <div class="qty">
+      <button onclick="decrease('j')">-</button>
+      <span id="j">0</span>
+      <button onclick="increase('j')">+</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="/static/simage.png" alt="Sandwich">
+    <h3>Sandwich</h3>
+    <p class="price">₹130</p>
+    <div class="qty">
+      <button onclick="decrease('s')">-</button>
+      <span id="s">0</span>
+      <button onclick="increase('s')">+</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="/static/fimage.png" alt="Fries">
+    <h3>Fries</h3>
+    <p class="price">₹90</p>
+    <div class="qty">
+      <button onclick="decrease('f')">-</button>
+      <span id="f">0</span>
+      <button onclick="increase('f')">+</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="/static/iimage.png" alt="Ice Cream">
+    <h3>Ice Cream</h3>
+    <p class="price">₹100</p>
+    <div class="qty">
+      <button onclick="decrease('i')">-</button>
+      <span id="i">0</span>
+      <button onclick="increase('i')">+</button>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="cart-receipt-container">
+
+  <div class="cart-box">
+  <h3>🛒 Add to Cart</h3>
+  <table id="cart-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody id="cart-items">
+    </tbody>
+  </table>
+  <p><strong>Total: ₹<span id="total">0</span></strong></p>
+  <button id="billBtn" class="bill-btn" onclick="printBill()" disabled>Generate Bill</button>
+</div>
+
+
+  <div id="receiptBox" class="receipt-box print-area">
+  <h3>🧾 Receipt</h3>
+  <p class="invoice">Invoice No: <span id="invoiceNumber"></span></p>
+  <p class="shop">Restaurant Menu</p>
+  <p class="receipt-datetime" id="receiptDateTime"></p>
+
+  <div class="receipt-header">
+    <span>Item</span>
+    <span>Price</span>
+    <span>Qty</span>
+    <span>Amt</span>
+  </div>
+
+  <div id="receipt-items"></div>
+
+  <p class="receipt-total">
+    Total : ₹<span id="receipt-total">0</span>
+  </p>
+
+  <p class="thanks">Thank You ❤️ Visit Again</p>
+</div>
+
+
+</div>
+
+
+
+<script src="/static/scripts.js"></script>
+</body>
+</html>

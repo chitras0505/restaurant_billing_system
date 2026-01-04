@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Order History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='menu.css') }}">
+</head>
+<body>
+    <h2 style="text-align:center;">📜 Order History</h2>
+
+    <div style="margin: 20px; overflow-x:auto;">
+        <table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:center;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if orders %}
+                    {% for order in orders %}
+                        <tr>
+                            <td>{{ order.id }}</td>
+                            <td>
+                                {% for item in order.parsed_items %}
+                                    {{ item.name }} x {{ item.qty }} <br>
+                                {% endfor %}
+                            </td>
+                            <td>₹{{ order.total }}</td>
+                            <td>{{ order.local_datetime.strftime("%d-%m-%Y | %I:%M %p") }}</td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="4">No orders found.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/menu"><button>Back to Menu</button></a>
+    </div>
+</body>
+</html>
