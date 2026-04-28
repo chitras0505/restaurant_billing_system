@@ -35,12 +35,20 @@ A full-stack web application that allows users to browse a restaurant menu, add 
 
 ---
 
-## 📸 Screens (Add screenshots here)
+## 📸 Screenshot
 
 * Login Page
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ab84f624-a0c7-497d-875e-9c62a4c20f3c" />
+
 * Menu Page
+  ![Uploading Screenshot 2026-04-28 132254.png…]()
+
 * Cart & Bill
+  
+
 * Order History
+  ![Uploading image.png…]()
+
 
 ---
 
