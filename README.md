@@ -1,38 +1,126 @@
-**🍽 Restaurant Ordering System**
-**Overview**
-This is a simple web-based restaurant ordering system built using Python Flask and SQLite.
-It allows customers to select menu items, add them to a cart, generate bills, and lets the admin view all past orders.
+🍽 # 🍽 Restaurant Billing & Order Management System
+
+A full-stack web application that allows users to browse a restaurant menu, add items to a cart, generate bills, and store order history. This project demonstrates real-world application development using frontend and backend integration.
+
+---
+
+## 🚀 Features
+
+* 🔐 User Login with validation
+* 🍔 Interactive restaurant menu
+* ➕ Add / ➖ Remove items dynamically
+* 🛒 Real-time cart update and total calculation
+* 🧾 Automatic bill generation with invoice number
+* 🖨️ Printable receipt system
+* 📜 Order history tracking
+* 🕒 Date & time tracking (IST format)
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+
+* HTML
+* CSS
+* JavaScript
+
+**Backend:**
+
+* Python (Flask)
+
+**Database:**
+
+* SQLite
+
+---
+
+## 📸 Screens (Add screenshots here)
+
+* Login Page
+* Menu Page
+* Cart & Bill
+* Order History
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/your-username/restaurant-billing-system.git
+   ```
+
+2. Navigate to project folder
+
+   ```bash
+   cd restaurant-billing-system
+   ```
+
+3. Install dependencies
+
+   ```bash
+   pip install flask flask_sqlalchemy
+   ```
+
+4. Run the application
+
+   ```bash
+   python app.py
+   ```
+
+5. Open in browser
+
+   ```
+   http://127.0.0.1:5000/
+   ```
+
+---
+
+## 📌 Usage
+
+* Login using email & password
+* Select food items from menu
+* Add items to cart
+* View total amount
+* Generate and print bill
+* View previous orders in order history
+
+---
+
+## 🧠 Key Highlights
+
+* Implemented full CRUD-like operation for order management
+* Dynamic cart calculation using JavaScript
+* Backend integration using Flask APIs
+* Data persistence using SQLite database
+* Clean UI with responsive design
+
+---
+
+## 🔮 Future Improvements
+
+* 🔑 Secure authentication system
+* 💳 Online payment integration
+* 📱 Mobile-friendly UI enhancements
+* 📊 Admin dashboard for analytics
+* ☁️ Deployment using cloud platforms
+
+---
+
+## 👩‍💻 Author
+
+**Chitra S**
+
+* Final Year BCA Student
+* Passionate about Full Stack Development
+
+---
+
+## 📬 Contact
+
+* 📧 Email: chitras05052006@gmail.com
+---
 
 
-**Features**
-
--- Login page for simple authentication (email & password).
--- View restaurant menu with items like Burger, Pizza, Juice, Sandwich, Fries, and Ice Cream.
--- Increase or decrease quantity of each item in the cart.
--- Calculate total amount for selected items.
--- Generate a bill/receipt with invoice number and date-time.
--- Admin can view all past orders with item details and total.
-
-
-**Tech Stack**
-
-Backend: Python, Flask
-Database: SQLite
-Frontend: HTML, CSS, JavaScript
-Libraries: Flask-SQLAlchemy for database handling
-
-**How It Works**
-
-**Login Page:** Enter email and password to access the menu.
-**Menu Page:**
-1.Select quantity for each food item.
-2.Cart updates automatically with item details and total.
-3.Generate Bill: Click “Generate Bill” to create a receipt and save the order in the database.
-4.View Orders: Go to "View Orders" to see all previous orders with items, total, and time.
-
-**How to Run**
-1)Install dependencies:
-     pip install flask flask_sqlalchemy
-
-2)Run the app:
-     python app.py
