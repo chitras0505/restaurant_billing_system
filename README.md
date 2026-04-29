@@ -41,14 +41,12 @@ A full-stack web application that allows users to browse a restaurant menu, add 
   <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ab84f624-a0c7-497d-875e-9c62a4c20f3c" />
 
 * Menu Page
-  ![Uploading Screenshot 2026-04-28 132254.png…]()
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/63aa7a9f-86c6-477d-a4d5-00d1ebcdcc7c" />
 
 * Cart & Bill
-  
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c5a2eb5e-5679-4ca0-ab3e-e0636778fde5" />
 
 * Order History
-  ![Uploading image.png…]()
-
 
 ---
 
