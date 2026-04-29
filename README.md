@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/df58b2a9-a545-4145-96d4-a985b028e725" /># 🍽 Restaurant Billing & Order Management System
+# 🍽 Restaurant Billing & Order Management System
 
 A full-stack web application that allows users to browse a restaurant menu, add items to a cart, generate bills, and store order history. This project demonstrates real-world application development using frontend and backend integration.
 
