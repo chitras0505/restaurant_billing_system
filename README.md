@@ -124,7 +124,7 @@ A full-stack web application that allows users to browse a restaurant menu, add 
 
 **Chitra S**
 
-* Final Year BCA Student
+* BCA Student
 * Passionate about Full Stack Development
 
 ---
